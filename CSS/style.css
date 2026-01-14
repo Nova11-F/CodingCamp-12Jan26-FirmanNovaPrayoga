@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.navbar .navbar-menu {
+  margin: 20px 100px 20px 0;
+}
+
+.navbar-menu {
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  margin: 0;
+  color: black;
+  padding: 10px 15px;
+}
+
+.navbar-menu .home {
+  border: 2px solid black;
+  border-radius: 4px 0 0 4px;
+}
+
+.navbar-menu .profile {
+  border: 2px solid black;
+  border-left: none;
+}
+
+.navbar-menu .portfolio {
+  border: 2px solid black;
+  border-left: none;
+}
+
+.navbar-menu .message {
+  border: 2px solid black;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+section {
+  padding: 50px 100px;
+  height: auto;
+  border-bottom: 2px solid black;
+}
+
+#home {
+  height: 100vh;
+}
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.profile-box {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.profile-item {
+  border: 2px solid black;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.form-box {
+  width: 450px;
+}
+
+.form-box label {
+  display: inline-block;
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box textarea {
+  width: 280px;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box input[type="radio"],
+.form-box textarea {
+  margin-left: 10px;
+}
+
+.form-box textarea {
+  height: 100px;
+  resize: none;
+  vertical-align: top;
+}
+
+.form-box button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background: #ebebeb;
+  cursor: pointer;
+}
+
+.result-box {
+  width: 600px;
+  min-height: 220px;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+footer p {
+  text-align: right;
+  padding: 20px 100px 20px 0;
+}

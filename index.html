@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RevoU CodingCamp</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img src="" alt="" />
+        </div>
+        <div class="navbar-menu">
+          <a href="#home" class="home">Home</a>
+          <a href="#profile" class="profile">Our Profile</a>
+          <a href="#portfolio" class="portfolio">Portofolio</a>
+          <a href="#message" class="message">Message Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <h1 id="helo" value="Person"></h1>
+      <p>Ini adalah website latihan pertama</p>
+    </section>
+
+    <section id="profile" class="profile">
+      <h1>Our Headquarter</h1>
+
+      <div class="profile-menu">
+        <div class="profile-box">
+          <div class="profile-item"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="profile-box">
+          <div class="profile-item"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="profile-box">
+          <div class="profile-item"></div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="message">
+      <h1>Message Us</h1>
+
+      <div class="container">
+        <div class="form-box">
+          <form id="Form-Message">
+            <label>Nama</label>
+            <span>:</span>
+            <input type="text" id="nama" placeholder="Nama" required />
+
+            <label>Tanggal Lahir</label>
+            <span>:</span>
+            <input type="date" id="tanggal" />
+
+            <label>Jenis Kelamin</label>
+            <span>:</span>
+            <input type="radio" name="jk" value="Laki - Laki" />
+            Laki-Laki
+            <input type="radio" name="jk" value="Perempuan" /> Perempuan
+            <br>
+
+            <label>Pesan</label>
+            <span>:</span>
+            <textarea id="pesan" placeholder="Pesan"></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div class="result-box" id="resultBox">
+          <div id="resultBox"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
