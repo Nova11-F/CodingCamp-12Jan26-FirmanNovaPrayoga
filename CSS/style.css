@@ -177,13 +177,24 @@ footer p {
 }
 
 @media (max-width: 576px) {
-  .navbar-menu {
-    font-size: 12px;
-    margin: 20px 0;
+  .navbrar {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
 
-  .navbar-menu a {
-    padding: 8px 10px;
+  .navbar .navbar-menu {
+    font-size: 12px;
+    margin: 20px;
+  }
+
+  .navbar .navbar-logo img {
+    height: 40px;
+    margin: 20px;
+  }
+
+  .navbar .navbar-menu a {
+    padding: 4px 5px;
   }
 
   section {
