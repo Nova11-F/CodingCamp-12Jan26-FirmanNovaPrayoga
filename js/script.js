@@ -1,7 +1,7 @@
 let name = prompt('Masukkan nama Anda:');
 if (!name) {
   name = "Guest";
-}
+};
 
 const helo = document.getElementById("helo");
 helo.innerHTML = `Hi ${name}, Welcome To Website`;

@@ -18,6 +18,12 @@ body {
   border-bottom: 2px solid black;
 }
 
+.navbar .navbar-logo img {
+  height: 60px;
+  margin: 10px 0 10px 100px;
+  border-radius: 100%;
+}
+
 .navbar .navbar-menu {
   margin: 20px 100px 20px 0;
 }
@@ -68,6 +74,22 @@ section {
   height: 100vh;
 }
 
+.profile p, ol{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.profile ol {
+  padding-left: 20px;
+}
+
+.profile li{
+  padding-left: 10px;
+}
+
 .profile-menu {
   display: flex;
   align-items: center;
@@ -75,9 +97,11 @@ section {
   margin-top: 70px;
 }
 
-.profile-box {
+.profile-box p{
   text-align: center;
-  margin: 0 20px;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .profile-item {
@@ -150,4 +174,33 @@ section {
 footer p {
   text-align: right;
   padding: 20px 100px 20px 0;
+}
+
+@media (max-width: 576px) {
+  .navbar-menu {
+    font-size: 12px;
+    margin: 20px 0;
+  }
+
+  .navbar-menu a {
+    padding: 8px 10px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .profile .profile-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-box, .result-box {
+    width: 80%;
+  }
 }
