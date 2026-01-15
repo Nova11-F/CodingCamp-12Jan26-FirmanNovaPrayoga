@@ -74,7 +74,8 @@ section {
   height: 100vh;
 }
 
-.profile p, ol{
+.profile p,
+ol {
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -86,7 +87,7 @@ section {
   padding-left: 20px;
 }
 
-.profile li{
+.profile li {
   padding-left: 10px;
 }
 
@@ -97,7 +98,7 @@ section {
   margin-top: 70px;
 }
 
-.profile-box p{
+.profile-box p {
   text-align: center;
   margin: 20px auto;
   font-size: 24px;
@@ -201,6 +202,15 @@ footer p {
     padding: 30px 20px;
   }
 
+  .profile h1 {
+    font-size: 24px;
+  }
+
+  .profile p,
+  ol {
+    font-size: 16px;
+  }
+
   .profile .profile-menu {
     flex-direction: column;
     gap: 20px;
@@ -211,7 +221,15 @@ footer p {
     gap: 20px;
   }
 
-  .form-box, .result-box {
+  .form-box input[type="text"],
+  .form-box input[type="date"],
+  .form-box textarea {
+    width: 180px;
+  }
+
+  .form-box,
+  .result-box {
     width: 80%;
+    justify-content: center;
   }
 }
