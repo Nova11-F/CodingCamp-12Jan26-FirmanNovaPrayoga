@@ -11,8 +11,8 @@ html {
 :root {
   --bg: #ffffff;
   --border: gray;
-  --primary:#9f59d9;
-  --secondary:#b25eeb;
+  --primary: #9f59d9;
+  --secondary: #b25eeb;
   --darker: #261f4a;
 }
 
@@ -97,7 +97,8 @@ html {
   border-radius: 25px;
   cursor: pointer;
   transform: translateY(0);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .navbar .navbar-menu .btn-join:hover {
@@ -120,6 +121,7 @@ html {
 }
 
 .home h1 {
+  margin-top: 80px;
   font-size: 42px;
   font-weight: 700;
   color: white;
@@ -137,10 +139,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px
+  gap: 40px;
 }
 
-.profile-item{
+.profile-item {
   width: 50%;
 }
 
@@ -208,7 +210,7 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.headquarter img{
+.headquarter img {
   background-color: white;
   width: 300px;
   height: 300px;
@@ -231,7 +233,7 @@ ul {
 
 .profile span,
 .headquarter span,
-.message span {
+.message .message-extra {
   color: var(--primary);
 }
 
@@ -303,7 +305,8 @@ ul {
   background: #ebebeb;
   cursor: pointer;
   transform: translateY(0);
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease,
+    transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-box button:hover {
@@ -321,10 +324,34 @@ ul {
   border: 2px solid var(--primary);
   border-radius: 4px;
   font-size: 14px;
+  text-wrap: balanced;
+  word-break: break-word;
+  overflow-wrap: break-word;
+    overflow-y: auto;
+    color: black;
 }
 
 .result-box .result-content {
   white-space: pre-wrap;
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.result-box .result-content p{
+  margin-bottom: 10px;
+}
+
+.message-text {
+  display: inline;
+  word-break: break-word;
+  color: black;
+}
+
+
+.result-box .time{
+   margin-top: auto;
+  text-align: right;
 }
 
 footer {
@@ -361,19 +388,19 @@ footer p {
   animation: scaleIn 0.3s ease;
 }
 
-.modal-content .modal-title{
+.modal-content .modal-title {
   text-align: center;
   margin-bottom: 15px;
 }
 
-.modal-content .modal-title h2{
+.modal-content .modal-title h2 {
   font-size: 32px;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 5px;
 }
 
-.modal-content .modal-title p{
+.modal-content .modal-title p {
   font-size: 14px;
   font-weight: 600;
   color: var(--darker);
@@ -393,7 +420,8 @@ footer p {
   top: auto;
   left: 370px;
   transform: translateY(0);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .modal-content .modal-close .close-btn {
@@ -412,25 +440,25 @@ footer p {
 .modal-content .box-form {
   display: flex;
   align-items: center;
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.modal-content .box-form div{
+.modal-content .box-form div {
   background-color: var(--darker);
   padding: 10px;
   border-radius: 8px 0 0 8px;
   color: white;
 }
 
-.modal-content .box-form input{
+.modal-content .box-form input {
   width: 370px;
-    border-radius: 0 8px 8px 0;
+  border-radius: 0 8px 8px 0;
 }
 
-.modal-content form select{
+.modal-content form select {
   width: 100%;
   margin-bottom: 25px;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .modal-content input,
@@ -453,7 +481,8 @@ footer p {
   border-radius: 8px;
   cursor: pointer;
   transform: translateY(0);
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -473,6 +502,150 @@ footer p {
   }
 }
 
-
 @media (max-width: 576px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar .navbar-logo img {
+    height: 50px;
+    margin: 10px 0 10px 20px;
+    border-radius: 100%;
+  }
+
+  .navbar .navbar-menu {
+  margin-right: 5px;
+  gap: 5px;
+}
+
+  .navbar .navbar-menu a {
+    font-size: 10px;
+  }
+
+  .navbar .navbar-menu .btn-join {
+    padding: 7px 14px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .home h1 {
+  margin-top: 80px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+#home{
+  height: 90vh;
+}
+
+#home,
+#profile,
+#message {
+  padding: 50px 20px;
+}
+
+.profile-box {
+  gap: 0;
+  flex-direction: column;
+}
+
+.profile-item {
+  width: 100%;
+}
+
+.profile-item h1{
+  font-size: 18px;
+}
+
+.profile-item p,
+ul {
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.headquarter-menu {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headquarter-box {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.form-box {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.form-box label {
+  display: inline-block;
+  width: 80px;
+  font-size: 12px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box textarea {
+  width: 270px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="date"],
+.form-box input[type="radio"],
+.form-box textarea {
+  margin-left: 10px;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="date"]:focus,
+.form-box textarea:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+.form-box textarea {
+  height: 100px;
+  resize: none;
+  vertical-align: top;
+}
+
+.form-box button {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.result-box {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+footer p {
+  text-align: right;
+  padding: 20px 20px 20px 0;
+  font-size: 12px;
+}
+
+
 }

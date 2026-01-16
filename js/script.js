@@ -16,32 +16,32 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const menuNavbar = document.querySelectorAll('.navbar .navbar-menu a')
+const menuNavbar = document.querySelectorAll(".navbar .navbar-menu a");
 
-menuNavbar.forEach(link => {
-    link.addEventListener("click", () => {
-        menuNavbar.forEach(item => item.classList.remove("active"));
-        link.classList.add("active");
-    });
+menuNavbar.forEach((link) => {
+  link.addEventListener("click", () => {
+    menuNavbar.forEach((item) => item.classList.remove("active"));
+    link.classList.add("active");
+  });
 });
 
 const joinBtn = document.getElementById("btn-join");
-  const modal = document.getElementById("joinModal");
-  const closeBtn = document.querySelector(".close-btn");
+const modal = document.getElementById("joinModal");
+const closeBtn = document.querySelector(".close-btn");
 
-  joinBtn.onclick = () => {
-    modal.style.display = "flex";
-  };
+joinBtn.onclick = () => {
+  modal.style.display = "flex";
+};
 
-  closeBtn.onclick = () => {
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target === modal) {
     modal.style.display = "none";
-  };
-
-  window.onclick = (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  };
+  }
+};
 
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
@@ -90,13 +90,13 @@ form.addEventListener("submit", function (event) {
   });
 
   resultBox.innerHTML = `
-      <div class="result-content">
-      <strong>Nama :</strong> ${nama}<br>
-      <strong>Tanggal Lahir :</strong> ${tanggal}<br>
-      <strong>Jenis Kelamin :</strong> ${jk}<br>
-      <strong>Pesan :</strong> ${pesan}
-      <br><br>
-      <p class="time">${formattedDate}</p>
-      </div>
-    `;
+  <div class="result-content">
+    <p><strong>Nama :</strong> ${nama}</p>
+    <p><strong>Tanggal Lahir :</strong> ${tanggal}</p>
+    <p><strong>Jenis Kelamin :</strong> ${jk}</p>
+    <p><strong>Pesan :</strong>  <span class="message-text">${pesan}</span></p>
+
+    <p class="time">${formattedDate}</p>
+  </div>
+`;
 });
