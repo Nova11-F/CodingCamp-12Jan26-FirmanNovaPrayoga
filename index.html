@@ -5,99 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RevoU CodingCamp</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <nav>
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <div class="navbar-logo">
           <img src="img/Logo-RevoU.png" alt="" />
         </div>
         <div class="navbar-menu">
-          <a href="#home" class="home">Home</a>
-          <a href="#profile" class="profile">Our Profile</a>
-          <a href="#portfolio" class="portfolio">Portofolio</a>
+          <a href="#home" class="home active">Home</a>
+          <a href="#profile" class="profile">About Us</a>
+          <a href="#headquarter" class="portfolio">Our Headquarter</a>
           <a href="#message" class="message">Message Us</a>
+          <button class="btn-join" id="btn-join">Join Now</button>
         </div>
       </div>
     </nav>
 
-    <section id="home" class="home">
-      <h1 id="helo" value="Person"></h1>
-      <p>Ini adalah website latihan pertama</p>
-    </section>
+      <section id="home" class="home">
+        <h1 id="helo" value="Person"></h1>
+      </section>
 
-    <section id="profile" class="profile">
-
-      <h1>Our Profile</h1>
-      <p>PT Nusantara Solusi Digital adalah perusahaan Teknologi Informasi (IT) yang berfokus pada pengembangan solusi digital, sistem informasi, dan layanan teknologi berbasis kebutuhan bisnis modern. Kami hadir untuk membantu perusahaan dan institusi beradaptasi serta berkembang di tengah pesatnya transformasi digital. Dengan dukungan infrastruktur dan tim IT yang solid, PT Nusantara Solusi Digital mengoperasikan tiga gedung utama yang berlokasi di Jakarta, Bandung, dan Surabaya. Ketiga kantor ini berperan sebagai pusat pengembangan teknologi, operasional, dan layanan pelanggan, sehingga kami mampu memberikan layanan yang responsif, aman, dan scalable di berbagai wilayah Indonesia. Kami mengedepankan inovasi, keamanan sistem, dan efisiensi dalam setiap solusi yang kami kembangkan - mulai dari pengembangan perangkat lunak, sistem berbasis web dan mobile, integrasi sistem, hingga layanan cloud dan keamanan informasi. Komitmen kami adalah menjadi mitra teknologi yang dapat diandalkan untuk pertumbuhan bisnis jangka panjang.</p>
-
-      <h1>Visi</h1>
-      <p>Menjadi perusahaan teknologi informasi terkemuka di Indonesia yang menyediakan solusi digital inovatif dan berkelanjutan untuk mendukung transformasi bisnis di era digital.</p>
-
-      <h1>Misi</h1>
-      <ol type="1">
-        <li>Menyediakan solusi teknologi informasi yang inovatif dan sesuai dengan kebutuhan bisnis klien.</li>
-        <li>Membangun kemitraan jangka panjang dengan klien melalui layanan yang berkualitas dan terpercaya.</li>
-        <li>Mengembangkan sumber daya manusia yang kompeten dan berdaya saing di bidang teknologi informasi.</li>
-        <li>Mendukung transformasi digital di berbagai sektor industri di Indonesia.</li>
-      </ol>
-
-      <h1>Our Headquarter</h1>
-
-      <div class="profile-menu">
-        <div class="profile-box">
-          <div class="profile-item"></div>
-          <p>Jakarta</p>
+      <section id="profile" class="profile">
+        <div class="profile-header">
+        <h1>About <Span>Us</Span></h1>
         </div>
         <div class="profile-box">
-          <div class="profile-item"></div>
-          <p>Bandung</p>
-        </div>
-        <div class="profile-box">
-          <div class="profile-item"></div>
-          <p>Surabaya</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="message" class="message">
-      <h1>Message Us</h1>
-
-      <div class="container">
-        <div class="form-box">
-          <form id="Form-Message">
-            <label>Nama</label>
-            <span>:</span>
-            <input type="text" id="nama" placeholder="Nama" required />
-
-            <label>Tanggal Lahir</label>
-            <span>:</span>
-            <input type="date" id="tanggal" />
-
-            <label>Jenis Kelamin</label>
-            <span>:</span>
-            <input type="radio" name="jk" value="Laki - Laki" />
-            Laki-Laki
-            <input type="radio" name="jk" value="Perempuan" /> Perempuan
-            <br>
-
-            <label>Pesan</label>
-            <span>:</span>
-            <textarea id="pesan" placeholder="Pesan"></textarea>
-
-            <button type="submit">Submit</button>
-          </form>
+        <div class="profile-item">
+          <h1>Our Profile</h1>
+          <p>
+            PT Nusantara Solusi Digital adalah perusahaan Teknologi Informasi
+            (IT) yang berfokus pada pengembangan solusi digital, sistem
+            informasi, dan layanan teknologi berbasis kebutuhan bisnis modern.
+            Kami hadir untuk membantu perusahaan dan institusi beradaptasi serta
+            berkembang di tengah pesatnya transformasi digital. Dengan dukungan
+            infrastruktur dan tim IT yang solid, PT Nusantara Solusi Digital
+            mengoperasikan tiga gedung utama yang berlokasi di Jakarta, Bandung,
+            dan Surabaya. Ketiga kantor ini berperan sebagai pusat pengembangan
+            teknologi, operasional, dan layanan pelanggan, sehingga kami mampu
+            memberikan layanan yang responsif, aman, dan scalable di berbagai
+            wilayah Indonesia. Kami mengedepankan inovasi, keamanan sistem, dan
+            efisiensi dalam setiap solusi yang kami kembangkan - mulai dari
+            pengembangan perangkat lunak, sistem berbasis web dan mobile,
+            integrasi sistem, hingga layanan cloud dan keamanan informasi.
+            Komitmen kami adalah menjadi mitra teknologi yang dapat diandalkan
+            untuk pertumbuhan bisnis jangka panjang.
+          </p>
         </div>
 
-        <div class="result-box" id="resultBox">
-          <div id="resultBox"></div>
+        <div class="profile-item">
+          <h1>Visi</h1>
+          <p>
+            Menjadi perusahaan teknologi informasi terkemuka di Indonesia yang
+            menyediakan solusi digital inovatif dan berkelanjutan untuk
+            mendukung transformasi bisnis di era digital.
+          </p>
+
+          <h1>Misi</h1>
+          <ul>
+            <li>
+              Menyediakan solusi teknologi informasi yang inovatif dan sesuai
+              dengan kebutuhan bisnis klien.
+            </li>
+            <li>
+              Membangun kemitraan jangka panjang dengan klien melalui layanan
+              yang berkualitas dan terpercaya.
+            </li>
+            <li>
+              Mengembangkan sumber daya manusia yang kompeten dan berdaya saing
+              di bidang teknologi informasi.
+            </li>
+            <li>
+              Mendukung transformasi digital di berbagai sektor industri di
+              Indonesia.
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+
+      <section id="headquarter" class="headquarter">
+        <h1>Our <Span>Headquarter</Span></h1>
+
+        <div class="headquarter-menu">
+          <div class="headquarter-box">
+            <img src="img/jakarta.png" alt="">
+            <p>Jakarta</p>
+          </div>
+          <div class="headquarter-box">
+            <img src="img/bandung.png" alt="">
+            <p>Bandung</p>
+          </div>
+          <div class="headquarter-box">
+            <img src="img/surabaya.png" alt="">
+            <p>Surabaya</p>
+          </div>
+          <div class="headquarter-box">
+            <img src="img/yogyakarta.png" alt="">
+            <p>Yogyakarta</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="message" class="message">
+        <h1>Message <span>Us</span></h1>
+
+        <div class="container">
+          <div class="form-box">
+            <form id="Form-Message">
+              <h2>Get In Touch</h2>
+              <label>Nama</label>
+              <span>:</span>
+              <input type="text" id="nama" placeholder="Masukkan Nama Anda" />
+
+              <label>Tanggal Lahir</label>
+              <span>:</span>
+              <input type="date" id="tanggal" />
+
+              <label>Jenis Kelamin</label>
+              <span>:</span>
+              <input type="radio" name="jk" value="Laki - Laki" />
+              Laki-Laki
+              <input type="radio" name="jk" value="Perempuan" /> Perempuan
+              <br />
+
+              <label>Pesan</label>
+              <span>:</span>
+              <textarea id="pesan" placeholder="Masukkan Pesan Anda"></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="result-box" id="resultBox">
+            <div id="resultBox"></div>
+          </div>
+        </div>
+      </section>
 
     <footer>
-      <p>Created By RevoU</p>
+      <p>
+        Copyright &copy;2026 | All rights reserved Terms and Conditions |
+        Privacy Policy
+      </p>
     </footer>
+
+<!-- Modal Overlay -->
+<div id="joinModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-close">
+    <i data-feather="x" class="close-btn"></i>
+    </div>
+
+    <div class="modal-title">
+    <h2>Join Revo U</h2>
+    <p>Daftarkan dirimu dan mulai perjalanan karier IT-mu.</p>
+    </div>
+
+    <form>
+      <div class="box-form">
+      <div><i data-feather="user"></i></div>
+      <input type="text" placeholder="Masukan Nama Lengkap anda" id="name" class="name"  required/>
+      </div>
+      <div class="box-form">
+      <div><i data-feather="mail"></i></div>
+      <input type="email" placeholder="Masukan Email anda" required  id="emaiil" class="email"/>
+      </div>
+      <select required>
+        <option value="">Pilih Program</option>
+        <option>Full Stack Developer</option>
+        <option>Data Analyst</option>
+        <option>UI/UX Designer</option>
+      </select>
+      <button type="submit" class="submit-btn">Daftar Sekarang</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  feather.replace();
+</script>
 
     <script src="js/script.js"></script>
   </body>
